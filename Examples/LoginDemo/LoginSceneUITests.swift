@@ -1,6 +1,14 @@
 import NestedA11yIDs
 import SwiftUI
 
+/*
+If you want to run UI tests:
+ 
+- UI Testing in Xcode requires an app target with a bundle identifier (not just a Swift Package executable target).
+- You must create a real Xcode app target (e.g., iOS App, macOS App) with an Info.plist, and specify its bundle identifier in the target's General settings.
+- The UI Test target should reference this app as its target application.
+ */
+
 // MARK: - UI Testing Extensions
 extension LoginScene {
     /// This is a helper extension to demonstrate how to use the nested identifiers in UI tests
