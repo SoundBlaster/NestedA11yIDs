@@ -29,8 +29,11 @@ jobs:
           --hosting-base-path NestedA11yIDs \
           --output-path ./docs
 
+    - name: Archive Documentation
+      run: ditto -c -k --sequesterRsrc --keepParent ./docs ./documentation.zip
+
     - name: Upload Documentation
       uses: actions/upload-artifact@v4
       with:
         name: documentation
-        path: ./docs
+        path: ./documentation.zip
