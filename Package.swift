@@ -16,7 +16,9 @@ let package = Package(
             name: "NestedA11yIDs",
             targets: ["NestedA11yIDs"])
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.1.0")
+    ],
     targets: [
         .target(
             name: "NestedA11yIDs",
