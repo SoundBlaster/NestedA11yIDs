@@ -13,6 +13,8 @@
     "developerName": "SoundBlaster",
     "category": "Productivity",
     "capabilities": [],
-    "defaultPrompt": "Help me add or review NestedA11yIDs identifiers in this SwiftUI project."
+    "defaultPrompt": [
+      "Help me add or review NestedA11yIDs identifiers in this SwiftUI project."
+    ]
   }
 }
