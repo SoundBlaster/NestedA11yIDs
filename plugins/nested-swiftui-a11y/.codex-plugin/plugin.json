@@ -1,0 +1,20 @@
+{
+  "name": "nested-swiftui-a11y",
+  "version": "0.1.0",
+  "description": "Guidance for integrating the NestedA11yIDs Swift package into SwiftUI applications.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "NestedA11yIDs for SwiftUI",
+    "shortDescription": "Add and verify hierarchical SwiftUI accessibility identifiers.",
+    "longDescription": "Integrate NestedA11yIDs into SwiftUI projects while preserving accessibility semantics and validating identifiers in UI tests.",
+    "developerName": "SoundBlaster",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Help me add or review NestedA11yIDs identifiers in this SwiftUI project."
+    ]
+  }
+}

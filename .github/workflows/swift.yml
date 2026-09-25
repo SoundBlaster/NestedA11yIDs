@@ -14,11 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Set up Swift
-      uses: fwal/setup-swift@v1
-      with:
-        swift-version: '5.9'
-
     - name: Build
       run: swift build -v
 
@@ -34,8 +29,11 @@ jobs:
           --hosting-base-path NestedA11yIDs \
           --output-path ./docs
 
+    - name: Archive Documentation
+      run: ditto -c -k --sequesterRsrc --keepParent ./docs ./documentation.zip
+
     - name: Upload Documentation
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: documentation
-        path: ./docs
+        path: ./documentation.zip
